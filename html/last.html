@@ -108,7 +108,7 @@ function init(){
 //이벤트 핸들러
 function clickHandler(evt){
 	document.querySelector("[data-index='"+selectedItem+"'] img").style.opacity = "0";
-	selectedItem = evt.currentTarget.getAttribute("data-id");
+	selectedItem = evt.currentTarget.getAttribute("data-index");
 	document.querySelector("#donut").className = "donut motion"+selectedItem;
 	document.querySelector("#centerBanner").className = "centerBanner motion"+selectedItem;
 	document.querySelector("[data-index='"+selectedItem+"'] img").style.opacity = "1";
